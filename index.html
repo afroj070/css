@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>wellcome to this JavaScript</h1>
+    <div id="firstcontainer" class="container">
+        <button id="click" onclick="testData()">click me</button>
+    </div>
+    <div class="continer">
+       <input type="number" id="firstNumber"><br>
+       <input type="number" id="secondNumber">
+    </div>
+    <p>Total
+        <span id="totalValues"></span>
+    </p>
+</body>
+<script>
+    function testData()
+    {
+        var firstValue = document.getElementById('firstNumber').value;
+        var secondNumber = document.getElementById('secondNumber').value;
+
+        var totalResult = parseInt(firstValue) + parseInt(secondNumber);
+        console.log('totalResult : ', totalResult);
+        document.getElementById("totalValues").innerHTML = totalResult;
+        // alert("firoj")
+    }
+    //1. ways to print in javascript
+    //console.log("this is word");
+    //consol;e.log("hello world");
+    //alert("me")
+    //document.write("this is document write")
+
+    //2. javascripr console APT
+    /*console.loge("hello world",4+6 "Another log");
+    console.warn("this is warning")
+    console.error("this is an error")*/
+    /*var x = 34;
+    var y = 56;
+    console.log(x+y);*/
+    var marks = {
+        afroj : 10,
+        aludden : 2,
+        subham : 30,
+    }
+    //console.log(marks);
+
+    //booleans
+    var a = true;
+    var b = false;
+    //console.log(a,b);
+
+    //ver und =undefined;
+    var und;
+    //console.log(und);
+
+    var n =null;
+    //console.log(n);
+    
+
+   /* At a very high level ,there are two type of data types in javscript
+
+    1.primitive data types: undefine, null, number, string,boolean, symbol
+    2.reference data types: arrays, and object*/
+
+
+    var arr = [1,2,3,4,5]
+    //console.log(arr )
+
+    var a = 44;
+    var b = 33;
+    console.log("the value of a + b is", a+b );
+    console.log("the value of a - b is", a-b );
+    console.log("the value of a * b is", a*b );
+    console.log("the value of a / b is", a/b );
+    console.log("the value of a % b is", a%b );
+
+    //assigamrnt operater
+    var c = b;
+    // c += 5;
+    //console.log(c);
+
+    //comparison opertors
+    var x = 34;
+    var y = 54;
+    /*console.log(x == y);
+    console.log(x <= y);
+    console.log(x >= y);
+    console.log(x < y);
+    console.log(x > y);*/
+
+     //cogical and
+
+    //cogical opertors
+    /*console.log(true && true)
+    console.log(true && false)
+    console.log(false && false)*/
+
+    //cogical or
+
+    /*console.log(true || true)
+    console.log(true || false)
+    console.log(false || false)*/
+
+    //cogical not
+    /*console.log(!true);
+    console.log(!false);*/
+
+    function abg (a , b){
+        return (a + b)/2;
+    }
+    c1 = abg(4, 6);
+    c2 = abg(14,16);
+    //console.log(c1 , c2);
+
+    //conditionals in javascrip
+    var age = 41;
+    //singli if statment
+     if(age > 18){
+     console.log('you can drink rasna water');
+    }
+    //if - else statment
+    /*if(age > 18){
+     console.log('you can drink rasna water');
+    }
+    else{
+        console.log('you connot drink rasna ');
+    }*/
+    //if - ladde
+    /*if(age > 32){
+        console.log("you are a not a kid")
+    }
+    else if(age > 26){
+        console.log("bachhe nahi rahe")
+    }
+
+    else if(age > 22){
+        console.log("yes bachhe nahi rahe")
+    }
+
+    else if(age > 18){
+        console.log("18 bachhe nahi rahe")
+    }
+    else{
+            console.log("bachhe rahe")
+        }
+        console.log("End of ladder")*/
+        var arr = [1,2,3,4,5,6,7];
+        /*console.log(arr)
+        //for (var i=0;i<arr.length;i++){
+          //  console.log(arr[i])
+         }*/
+        /*arr.forEach(function(element){
+            console.log(element);
+        })*/
+        let j=0;
+        /*const ac =0;
+        ac++;*/
+        //ac =ac +1; 
+       /* while(j<arr.length){
+            console.log(arr[j]);
+            j++;     
+        }*/
+        /*do{
+            console.log(arr[j]);
+            j++;  
+        } while(j < arr.length);*/
+        
+        let myArr = ["fan","camera",34,null,true];
+        //array methode
+        console.log(myarr.length);
+      // myArr.pop();
+     // myArr.push("harry")
+     myarr.shift()
+     console.log(  myArr.unshift("harry"))
+        console.log(myarr);  
+</script>
+</html>

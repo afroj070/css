@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+            height: 35px;
+    /* width: 33px; */
+    text-align: center;
+    border: 1px solid black;
+    cursor: pointer;
+
+        }
+        td:hover {
+            background-color: blue;
+            color: white;
+        }
+        table,tr{
+            width: 100px;
+        }
+        </style>
+</head>
+<body>
+    <table style="width:50%">
+        <tr style="width: 100px;">
+          
+            <td colspan="4"></td>
+        </tr>
+        <tr>
+          <td data-value="1" onclick="getValue(event)">1</td>
+          <td data-value="2" onclick="getValue(event)">2</td>
+          <td data-value="3" onclick="getValue(event)">3</td>
+          <td data-value="x" onclick="getValue(event)">X</td>
+        </tr>
+        <tr>
+            <td data-value="4" onclick="getValue(event)">4</td>
+            <td data-value="5" onclick="getValue(event)">5</td>
+            <td data-value="6" onclick="getValue(event)">6</td>
+            <td data-value="-" onclick="getValue(event)">-</td>
+          </tr>
+          <tr>
+            <td data-value="7" onclick="getValue(event)">7</td>
+            <td data-value="8" onclick="getValue(event)">8</td>
+            <td data-value="9" onclick="getValue(event)">9</td>
+            <td data-value="+" onclick="getValue(event)">+</td>
+          </tr>
+          <tr>
+            <td data-value="c" onclick="getValue(event)">c</td>
+            <td data-value="0" onclick="getValue(event)">0</td>
+            <td data-value="=" onclick="getValue(event)">=</td>
+            <td data-value="%" onclick="getValue(event)">%</td>
+          </tr>
+      </table>
+</body>
+<script>
+    function getValue(event) {
+        console.log('val : ', event.target.getAttribute('data-value'));
+        // var val = (event.target).attr('data-value');
+    }
+</script>
+</html>

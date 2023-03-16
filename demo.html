@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+            background-color: turquoise;
+        }
+        #header{
+            width: 100%;
+            height: 20%;
+            background-color: aqua;
+        }
+        ul{
+            display: flex;
+            background-color: yellowgreen;
+            margin: 0px;
+            padding: 3px;
+            justify-content: center;
+            
+        }
+        ul li{
+             list-style: none;
+             margin-left: 68px;
+             font-size: 22px;
+        }
+        .row1{
+            width: 100%;
+            height: 50%;
+            background-color: yellowgreen;
+        }
+        .row1-coll1{
+            width: 25%;
+            height: 50%;
+            background-color: yellow;
+            float: left;
+        }
+        .row1-coll2{
+            width: 75%;
+            height: 50%;
+            float: left;
+        }
+        img{
+            width: 100%;
+            height: 355px;
+        }
+        .row1-coll1-row1{
+            font-size: 22px;
+            border-bottom: 1px solid black;
+            line-height: 33px;
+            margin-bottom: 20px;
+            float: left;
+  
+        }
+        .row1-coll2-row2{
+            width: 74px;
+            height: 25px;
+            float: left;
+        }
+        .row3{
+            width: 100%;
+            height: 50%;
+            background-color: yellowgreen;
+        }
+        .row3-coll1{
+            width: 50%;
+            height: 20%;
+            background-color: blue;
+            float: left;
+        }
+        .row3-coll2{
+            width: 50%;
+            height: 20%;
+            background-color: yellow;
+            float: left;
+        }
+        .row4{
+            width: 100%;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <!-- <div id="logo">logo</div> -->
+            <div class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Content</li>
+                <li>gallery</li>
+                <li>File manager</li>
+            </ul>
+           </div>
+        </div>
+        <div class="row1">
+            <div class="row1-coll1">
+                <div class="row1-coll1-row1">Registration Form</div>
+                <table> 
+                    <form>
+                      <tr>
+                          <td>Name:</td>
+                          <td>
+                          <input type="name"placeholder="Inter your Name">
+                      </td>
+                      </tr>
+                      <tr>
+                          <td>Mobile Number:</td>
+                          <td>
+                              <input type="number"placeholder="Inter your mobail number">
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>Email ID:</td>
+                          <td>
+                              <input type="email id"placeeholder="Inter your email id">
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>password:</td>
+                          <td>
+                              <input type="password"placeeholder="Inter your password">
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>Gender:</td>
+                          <td>
+                              <input type="radio" name="gender">male
+                              <input type="radio" name="gender">male
+                          </td>
+                      </tr>
+                      <td>Education Qualification:</td>
+                      <td>
+                          <select>
+                              <option>select option</option>
+                              <option>10+2</option>
+                              <option>Graduation</option>
+                              <option>postgraduation</option>
+                          </select>
+                      </td>
+                          <tr>
+                              <td>country:</td>
+                              <td>
+                                  <select>
+                                      <option>india</option>
+                                      <option>pakistan</option>
+                                      <option>china</option>
+                                      <option>nepal</option>
+                                      <option>kasmeer</option>
+                                  </select>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>Address:</td>
+                              <td>
+                                  <textarea rows="5" col="17"placeholder=address></textarea>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <input type="Submit"value="Submit">
+                                  <input type="Reset"value="Reset">
+                              </td>
+                          </tr>
+                    </form>
+               </table>
+            </div>
+            <div class="row1-coll2">
+                <img src="mmm.jpg" alt="">
+            </div>
+        </div>
+        <di class="row3">
+            <div class="row3-coll1">
+                <h1>Loram & Loram Technologies logos</h1>
+                <p>With decades of maintenance of way expertise and experience, no one knows 
+                   the rail like Loram. Today, with our Loram Technologies business group, 
+                    were leveraging our accumulated data, analytics and maintenance algorithms 
+                    with advanced inspection technologies to provide you actionable 
+                    intelligence with real-time monitoring and the most precise application of 
+                    maintenance of way activities. In this new era of digital insight, interval
+                    -based maintenance is a thing of the past. Loram delivers on the promise of 
+                    truly targeted, agile and data-driven solutions, offering unsurpassed efficiency,
+                     predictability and return on your maintenance investment.</p>
+            </div>
+            <div class="row3-coll2">
+                <h1>Loram & Loram Technologies logos</h1>
+                <p>With decades of maintenance of way expertise and experience, no one knows 
+                    the rail like Loram. Today, with our Loram Technologies business group, 
+                    were leveraging our accumulated data, analytics and maintenance algorithms 
+                    with advanced inspection technologies to provide you actionable intelligence
+                     with real-time monitoring and the most precise application of maintenance 
+                     of way activities. In this new era of digital insight, interval-based 
+                     maintenance is a thing of the past. Loram delivers on the promise of truly 
+                     targeted, agile and data-driven solutions, offering unsurpassed efficiency, 
+                     predictability and return on your maintenance investment.</p>
+            </div>
+        </di>
+        <div class="row4">
+            <div class="row4-coll1">
+                <img src="khan.jpg" alt="">
+            </div>
+        </div>      
+    </div>
+</body>
+</html>

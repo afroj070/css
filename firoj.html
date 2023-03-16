@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            color: white;
+        }
+        .bgimage{
+            background-image: url('khan.jpg');
+            background-size: 100% 100%;
+            width: 100%;
+            height: 100vh;           
+        }
+        .menu{
+            width: 100%;
+            height: 80px;
+            background-color: rgb(47, 61, 255);
+        }
+        .leftmeny{
+            width: 25%;
+            line-height: 80px;
+            float: left;
+        }
+        .leftmeny h2{
+            padding-left: 70px;
+            font-weight: bold;
+            color: white;
+            font-size: 22px;
+        }
+        .rightmenu{
+            width: 75%;
+            height: 100%;
+            float: left;
+        }
+        .rightmenu ul{
+            margin-left: 200px;
+        }
+        .rightmenu ul li{
+            display: inline-block;
+            list-style: none;
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 80px;
+            margin-left: 40px;
+            text-transform: uppercase;
+        }
+        #fistlist{
+            color: orange;
+        }
+        .rightmenu ul li:hover{
+            color: orange;
+        }
+        .text{
+            width: 100%;
+            margin-top: 185px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .text h4{
+            font-size: 14px;
+        }
+        .text h1{
+            font-size: 62px;
+            font-weight: bold;
+            margin: 16px 0px;
+        }
+        .text h3{
+            font-size: 12px;
+        }
+        #buttonone{
+            background-color: rgb(255, 255, 255);
+            border: none;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 40px;
+            width: 150px;margin-top: 25px;
+            border: 3px solid white;
+            color: black;
+        }
+        #buttontwo{
+            background-color: transparent;
+            border: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            line-height: 40px;
+            border: 3px solid white;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bgimage">
+        <div class="menu">
+            <div class="leftmeny">
+                <h2>AFROJ KHAN</h2>
+            </div>
+            <div class="rightmenu">
+                <ul>
+                    <li id="fistlist">HOME</li>
+                    <li>SERVICES</li>
+                    <li>WORKS</li>
+                    <li>ABOUT</li>
+                    <li>BLOGS</li>
+                    <li>CONTACT</li> 
+                </ul>
+            </div>
+        </div>
+        <div class="text">
+            <h4>DESIGN . DEVELOPMENT . BRANDING</h4>
+            <h1>CREATIVE & EXPERTISE</h1>
+            <h3>WE ARE THE ONE OF THE WORLD TOP CREATIVE SESIGN AGENCIES</h3>
+            <button id="buttonone"> like share </button>
+            <button id="buttontwo"> subscribe </button>
+        </div>
+    </div>
+</body>
+</html>
